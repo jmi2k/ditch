@@ -1,0 +1,37 @@
+[package]
+name = "ditch"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ahash = "0.8"
+arrayvec = "0.7"
+image = "0.24"
+noise = "0.8"
+rand = "0.8"
+seahash = "4.1"
+rand_xoshiro = "0.4"
+toml = "0.4"
+winit = "0.28"
+wgpu = "0.17"
+
+[dependencies.bytemuck]
+version = "1.12"
+features = [ "derive" ]
+
+[dependencies.glam]
+version = "0.24"
+features = [ "bytemuck", "serde" ]
+
+[dependencies.pollster]
+version = "0.3"
+features = [ "macro" ]
+
+[dependencies.serde]
+version = "1.0"
+features = [ "derive" ]
+
+[profile.release]
+debug = true

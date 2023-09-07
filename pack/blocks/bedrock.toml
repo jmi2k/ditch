@@ -1,0 +1,16 @@
+[culls]
+west = true
+east = true
+south = true
+north = true
+down = true
+up = true
+
+[[parts]]
+type = "cuboid"
+west = { tile = "bedrock.png", cull = "west" }
+east = { tile = "bedrock.png", cull = "east" }
+south = { tile = "bedrock.png", cull = "south" }
+north = { tile = "bedrock.png", cull = "north" }
+down = { tile = "bedrock.png", cull = "down" }
+up = { tile = "bedrock.png", cull = "up" }

@@ -1,0 +1,57 @@
+[culls]
+west = false
+east = false
+south = false
+north = false
+down = true
+up = true
+
+# West
+[[parts]]
+type = "rect"
+xyz0 = [ 0.0625, 1.0, 0.0 ]
+xyz1 = [ 0.0625, 0.0, 0.0 ]
+xyz2 = [ 0.0625, 0.0, 1.0 ]
+tile = "cactus.png"
+
+# East
+[[parts]]
+type = "rect"
+xyz0 = [ 0.9375, 0.0, 0.0 ]
+xyz1 = [ 0.9375, 1.0, 0.0 ]
+xyz2 = [ 0.9375, 1.0, 1.0 ]
+tile = "cactus.png"
+
+# South
+[[parts]]
+type = "rect"
+xyz0 = [ 0.0, 0.0625, 0.0 ]
+xyz1 = [ 1.0, 0.0625, 0.0 ]
+xyz2 = [ 1.0, 0.0625, 1.0 ]
+tile = "cactus.png"
+
+# North
+[[parts]]
+type = "rect"
+xyz0 = [ 1.0, 0.9375, 0.0 ]
+xyz1 = [ 0.0, 0.9375, 0.0 ]
+xyz2 = [ 0.0, 0.9375, 1.0 ]
+tile = "cactus.png"
+
+# Down
+[[parts]]
+type = "rect"
+xyz0 = [ 0.0625, 0.9375, 0.0 ]
+xyz1 = [ 0.9375, 0.9375, 0.0 ]
+xyz2 = [ 0.9375, 0.0625, 0.0 ]
+tile = "cactus+down.png"
+culls = "down"
+
+# Up
+[[parts]]
+type = "rect"
+xyz0 = [ 0.0625, 0.0625, 1.0 ]
+xyz1 = [ 0.9375, 0.0625, 1.0 ]
+xyz2 = [ 0.9375, 0.9375, 1.0 ]
+tile = "cactus+up.png"
+culls = "up"
